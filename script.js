@@ -9,8 +9,8 @@ function contar(){
         resultado.innerHTML = "Preencha os dados acima!"
     } 
     else {
-        resultado.innerHTML = 'Contando <br>'
-        let i = Number(inicio.value)
+        resultado.innerHTML = 'Contando: <br>' // quebra de linha em HTML
+        let i = Number(inicio.value) //convertendendo string em numero
         let f = Number(fim.value)
         let p = Number(passo.value)
         if ( p <= 0 ){
@@ -28,6 +28,6 @@ function contar(){
                 resultado.innerHTML += `${c} \u{1F449}`
             }
         }
-        resultado.innerHTML += `\u{1F3C1}`
+        resultado.innerHTML += `\u{1F3C1}` //bandeira
     }
 }
